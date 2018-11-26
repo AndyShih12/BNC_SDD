@@ -1,4 +1,4 @@
-*.class
+exe/*
 *.odd
 
 .DS_Store
