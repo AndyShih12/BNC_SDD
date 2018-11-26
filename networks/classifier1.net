@@ -1,0 +1,364 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@9cb99cc";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@2eff6931";
+	jenginegenerator6060830225489488864L = "edu.ucla.belief.inference.JoinTreeSettings@3905b80e";
+	node_size = (130.0 55.0);
+}
+
+node e5_paste0
+{
+	states = ("state0" "state1" );
+	position = (849 -15);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable6";
+	label = "e5";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h3
+{
+	states = ("state0" "state1" );
+	position = (285 -297);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable5";
+	label = "h3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e2
+{
+	states = ("state0" "state1" );
+	position = (116 -209);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "true";
+	ID = "variable3";
+	label = "e2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e4_paste1
+{
+	states = ("state0" "state1" );
+	position = (1016 -399);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable8";
+	label = "e4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e4
+{
+	states = ("state0" "state1" );
+	position = (384 -392);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "true";
+	ID = "variable8";
+	label = "e4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node variable9
+{
+	states = ("state0" "state1" );
+	position = (26 -458);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable9";
+	label = "variable9";
+	excludepolicy = "include whole CPT";
+}
+node e4_paste0
+{
+	states = ("state0" "state1" );
+	position = (705 -112);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable8";
+	label = "e4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h2_paste1
+{
+	states = ("state0" "state1" );
+	position = (1003 -207);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "h2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node C
+{
+	states = ("state0" "state1" );
+	position = (114 -46);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "C";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e3
+{
+	states = ("state0" "state1" );
+	position = (169 -392);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "true";
+	ID = "variable7";
+	label = "e3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h2_paste0
+{
+	states = ("state0" "state1" );
+	position = (692 80);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "h2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h3_paste1
+{
+	states = ("state0" "state1" );
+	position = (918 -304);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable5";
+	label = "h3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e5_paste1
+{
+	states = ("state0" "state1" );
+	position = (1160 -302);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable6";
+	label = "e5";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e5
+{
+	states = ("state0" "state1" );
+	position = (528 -295);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "true";
+	ID = "variable6";
+	label = "e5";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e1
+{
+	states = ("state0" "state1" );
+	position = (-18 -119);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "true";
+	ID = "variable1";
+	label = "e1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h1
+{
+	states = ("state0" "state1" );
+	position = (247 -131);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "h1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h3_paste0
+{
+	states = ("state0" "state1" );
+	position = (607 -17);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable5";
+	label = "h3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e3_paste0
+{
+	states = ("state0" "state1" );
+	position = (490 -112);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable7";
+	label = "e3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node h2
+{
+	states = ("state0" "state1" );
+	position = (371 -201);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "h2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node e3_paste1
+{
+	states = ("state0" "state1" );
+	position = (801 -399);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable7";
+	label = "e3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( e5_paste0 | h2_paste0 )
+{
+	data = ((	0.85	0.15	)
+		(	0.15	0.85	));
+}
+potential ( h3 | h2 )
+{
+	data = ((	0.8	0.2	)
+		(	0.25	0.75	));
+}
+potential ( e2 | h1 )
+{
+	data = ((	0.9	0.1	)
+		(	0.2	0.8	));
+}
+potential ( e4_paste1 | h3_paste1 )
+{
+	data = ((	0.8	0.2	)
+		(	0.25	0.75	));
+}
+potential ( e4 | h3 )
+{
+	data = ((	0.8	0.2	)
+		(	0.25	0.75	));
+}
+potential ( variable9 | e1 e2 e3 e4 e5 )
+{
+	data = ((((((	1.0	0.0	)
+		(	1.0	0.0	))
+		((	1.0	0.0	)
+		(	1.0	0.0	)))
+		(((	1.0	0.0	)
+		(	1.0	0.0	))
+		((	1.0	0.0	)
+		(	1.0	0.0	))))
+		((((	1.0	0.0	)
+		(	1.0	0.0	))
+		((	1.0	0.0	)
+		(	1.0	0.0	)))
+		(((	1.0	0.0	)
+		(	1.0	0.0	))
+		((	1.0	0.0	)
+		(	1.0	0.0	)))))
+		(((((	1.0	0.0	)
+		(	1.0	0.0	))
+		((	1.0	0.0	)
+		(	1.0	0.0	)))
+		(((	0.0	1.0	)
+		(	1.0	0.0	))
+		((	1.0	0.0	)
+		(	1.0	0.0	))))
+		((((	1.0	0.0	)
+		(	1.0	0.0	))
+		((	1.0	0.0	)
+		(	1.0	0.0	)))
+		(((	1.0	0.0	)
+		(	1.0	0.0	))
+		((	1.0	0.0	)
+		(	1.0	0.0	))))));
+}
+potential ( e4_paste0 | h3_paste0 )
+{
+	data = ((	0.8	0.2	)
+		(	0.25	0.75	));
+}
+potential ( h2_paste1 | )
+{
+	data = (	0.1783	0.8217	);
+}
+potential ( C | )
+{
+	data = (	0.2	0.8	);
+}
+potential ( e3 | h3 )
+{
+	data = ((	0.9	0.1	)
+		(	0.1	0.9	));
+}
+potential ( h2_paste0 | )
+{
+	data = (	0.1783	0.8217	);
+}
+potential ( h3_paste1 | h2_paste1 )
+{
+	data = ((	0.8	0.2	)
+		(	0.25	0.75	));
+}
+potential ( e5_paste1 | h2_paste1 )
+{
+	data = ((	0.85	0.15	)
+		(	0.15	0.85	));
+}
+potential ( e5 | h2 )
+{
+	data = ((	0.85	0.15	)
+		(	0.15	0.85	));
+}
+potential ( e1 | C )
+{
+	data = ((	0.85	0.15	)
+		(	0.25	0.75	));
+}
+potential ( h1 | C )
+{
+	data = ((	0.8	0.2	)
+		(	0.1	0.9	));
+}
+potential ( h3_paste0 | h2_paste0 )
+{
+	data = ((	0.8	0.2	)
+		(	0.25	0.75	));
+}
+potential ( e3_paste0 | h3_paste0 )
+{
+	data = ((	0.9	0.1	)
+		(	0.1	0.9	));
+}
+potential ( h2 | h1 )
+{
+	data = ((	0.7	0.3	)
+		(	0.1	0.9	));
+}
+potential ( e3_paste1 | h3_paste1 )
+{
+	data = ((	0.9	0.1	)
+		(	0.1	0.9	));
+}

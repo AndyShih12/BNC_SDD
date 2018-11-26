@@ -1,0 +1,3602 @@
+net 
+{
+    node_size = (76 36);
+}
+
+node GOAL_2
+{
+    label = "GOAL_2";
+    position = (51 3531);
+    states = ("false"  "true");
+}
+
+node SNode_3
+{
+    label = "SNode_3";
+    position = (511 3531);
+    states = ("false"  "true");
+}
+
+node SNode_4
+{
+    label = "SNode_4";
+    position = (603 3531);
+    states = ("false"  "true");
+}
+
+node SNode_5
+{
+    label = "SNode_5";
+    position = (695 3531);
+    states = ("false"  "true");
+}
+
+node SNode_6
+{
+    label = "SNode_6";
+    position = (787 3531);
+    states = ("false"  "true");
+}
+
+node SNode_7
+{
+    label = "SNode_7";
+    position = (879 3531);
+    states = ("false"  "true");
+}
+
+node DISPLACEM0
+{
+    label = "DISPLACEMENT_DIRECTION";
+    position = (1707 3531);
+    states = ("false"  "true");
+}
+
+node RApp1
+{
+    label = "RApp1";
+    position = (787 3487);
+    states = ("false"  "true");
+}
+
+node GIVEN_1
+{
+    label = "GIVEN_1";
+    position = (1799 3531);
+    states = ("false"  "true");
+}
+
+node RApp2
+{
+    label = "RApp2";
+    position = (879 3487);
+    states = ("false"  "true");
+}
+
+node SNode_8
+{
+    label = "SNode_8";
+    position = (143 3443);
+    states = ("false"  "true");
+}
+
+node SNode_9
+{
+    label = "SNode_9";
+    position = (971 3531);
+    states = ("false"  "true");
+}
+
+node SNode_10
+{
+    label = "SNode_10";
+    position = (1063 3531);
+    states = ("false"  "true");
+}
+
+node SNode_11
+{
+    label = "SNode_11";
+    position = (1155 3531);
+    states = ("false"  "true");
+}
+
+node SNode_12
+{
+    label = "SNode_12";
+    position = (1247 3531);
+    states = ("false"  "true");
+}
+
+node SNode_13
+{
+    label = "SNode_13";
+    position = (1339 3531);
+    states = ("false"  "true");
+}
+
+node SNode_14
+{
+    label = "SNode_14";
+    position = (50 2322);
+    states = ("false"  "true");
+}
+
+node SNode_15
+{
+    label = "SNode_15";
+    position = (1431 3531);
+    states = ("false"  "true");
+}
+
+node SNode_16
+{
+    label = "SNode_16";
+    position = (1523 3531);
+    states = ("false"  "true");
+}
+
+node SNode_17
+{
+    label = "SNode_17";
+    position = (1615 3531);
+    states = ("false"  "true");
+}
+
+node SNode_19
+{
+    label = "SNode_19";
+    position = (12578 -18);
+    states = ("false"  "true");
+}
+
+node NEED1
+{
+    label = "NEED_VAR_FOR_GRAV_CONST";
+    position = (1891 3531);
+    states = ("false"  "true");
+}
+
+node SNode_20
+{
+    label = "SNode_20";
+    position = (143 3487);
+    states = ("false"  "true");
+}
+
+node GRAV2
+{
+    label = "GRAV_CONSTANT_OF_EARTH";
+    position = (1983 3531);
+    states = ("false"  "true");
+}
+
+node SNode_21
+{
+    label = "SNode_21";
+    position = (235 3443);
+    states = ("false"  "true");
+}
+
+node VALUE3
+{
+    label = "VALUE_KNOWN_EQN";
+    position = (2075 3531);
+    states = ("false"  "true");
+}
+
+node SNode_24
+{
+    label = "SNode_24";
+    position = (143 3399);
+    states = ("false"  "true");
+}
+
+node SLIDING4
+{
+    label = "SLIDING_CONTACT";
+    position = (2167 3531);
+    states = ("false"  "true");
+}
+
+node SNode_25
+{
+    label = "SNode_25";
+    position = (235 3487);
+    states = ("false"  "true");
+}
+
+node CONSTANT5
+{
+    label = "CONSTANT_MEANS_KNOWN";
+    position = (2259 3531);
+    states = ("false"  "true");
+}
+
+node SNode_26
+{
+    label = "SNode_26";
+    position = (327 3487);
+    states = ("false"  "true");
+}
+
+node KNOWN6
+{
+    label = "KNOWN_VECTOR_COMPO";
+    position = (2351 3531);
+    states = ("false"  "true");
+}
+
+node VELOCITY7
+{
+    label = "VELOCITY_DIRECTION";
+    position = (2443 3531);
+    states = ("false"  "true");
+}
+
+node SNode_47
+{
+    label = "SNode_47";
+    position = (419 3487);
+    states = ("false"  "true");
+}
+
+node RApp3
+{
+    label = "RApp3";
+    position = (419 3443);
+    states = ("false"  "true");
+}
+
+node KNOWN8
+{
+    label = "KNOWN_NULL_VECTOR_COMPO";
+    position = (2535 3531);
+    states = ("false"  "true");
+}
+
+node RApp4
+{
+    label = "RApp4";
+    position = (971 3487);
+    states = ("false"  "true");
+}
+
+node SNode_27
+{
+    label = "SNode_27";
+    position = (235 3399);
+    states = ("false"  "true");
+}
+
+node COMPO16
+{
+    label = "COMPO_IS_MAG";
+    position = (2627 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_48
+{
+    label = "GOAL_48";
+    position = (51 3487);
+    states = ("false"  "true");
+}
+
+node TRY12
+{
+    label = "TRY_KINEMATICS";
+    position = (2719 3531);
+    states = ("false"  "true");
+}
+
+node TRY11
+{
+    label = "TRY_KINEMATICS_FOR_VELOCITY";
+    position = (1063 3487);
+    states = ("false"  "true");
+}
+
+node GOAL_49
+{
+    label = "GOAL_49";
+    position = (51 3443);
+    states = ("false"  "true");
+}
+
+node CHOOSE19
+{
+    label = "CHOOSE_BODY_FOR_KINE_GOAL";
+    position = (2811 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_50
+{
+    label = "GOAL_50";
+    position = (51 3399);
+    states = ("false"  "true");
+}
+
+node SYSTEM18
+{
+    label = "SYSTEM_WITH_VELOCITY_ENDPOINT";
+    position = (2903 3531);
+    states = ("false"  "true");
+}
+
+node SNode_51
+{
+    label = "SNode_51";
+    position = (51 3355);
+    states = ("false"  "true");
+}
+
+node KINEMATI17
+{
+    label = "KINEMATICS_SYSTEM_IS_SYSTEM";
+    position = (2995 3531);
+    states = ("false"  "true");
+}
+
+node SNode_52
+{
+    label = "SNode_52";
+    position = (51 3311);
+    states = ("false"  "true");
+}
+
+node IDENTIFY10
+{
+    label = "IDENTIFY_KINEMATIC_QUANTITIES";
+    position = (3087 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_53
+{
+    label = "GOAL_53";
+    position = (51 3267);
+    states = ("false"  "true");
+}
+
+node IDENTIFY9
+{
+    label = "IDENTIFY_INITIAL_VELOCITY_GOAL";
+    position = (3179 3531);
+    states = ("false"  "true");
+}
+
+node SNode_28
+{
+    label = "SNode_28";
+    position = (143 3223);
+    states = ("false"  "true");
+}
+
+node TRY13
+{
+    label = "TRY_KINEMATICS_FOR_ACCEL";
+    position = (1155 3487);
+    states = ("false"  "true");
+}
+
+node TRY14
+{
+    label = "TRY_KINEMATICS_FOR_DURATION";
+    position = (1247 3487);
+    states = ("false"  "true");
+}
+
+node TRY15
+{
+    label = "TRY_KINEMATICS_FOR_DISPLACEMENT";
+    position = (1339 3487);
+    states = ("false"  "true");
+}
+
+node VAR20
+{
+    label = "VAR_DENOTES_GIVEN";
+    position = (3271 3531);
+    states = ("false"  "true");
+}
+
+node SNode_29
+{
+    label = "SNode_29";
+    position = (51 3179);
+    states = ("false"  "true");
+}
+
+node SNode_31
+{
+    label = "SNode_31";
+    position = (51 3135);
+    states = ("false"  "true");
+}
+
+node GIVEN21
+{
+    label = "GIVEN_MASS_IMPLIES_NONZERO_MASS";
+    position = (3363 3531);
+    states = ("false"  "true");
+}
+
+node SNode_33
+{
+    label = "SNode_33";
+    position = (511 3487);
+    states = ("false"  "true");
+}
+
+node SNode_34
+{
+    label = "SNode_34";
+    position = (603 3487);
+    states = ("false"  "true");
+}
+
+node VECTOR27
+{
+    label = "VECTOR_IS_EQUIV_COMPONENT";
+    position = (3455 3531);
+    states = ("false"  "true");
+}
+
+node APPLY32
+{
+    label = "APPLY_KINEMATICS";
+    position = (3547 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_56
+{
+    label = "GOAL_56";
+    position = (143 3267);
+    states = ("false"  "true");
+}
+
+node CHOOSE35
+{
+    label = "CHOOSE_AXIS_FOR_KINEMATICS";
+    position = (3639 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_57
+{
+    label = "GOAL_57";
+    position = (51 3223);
+    states = ("false"  "true");
+}
+
+node MAXIMIZE34
+{
+    label = "MAXIMIZE_DIRS_AXIS";
+    position = (3731 3531);
+    states = ("false"  "true");
+}
+
+node SNode_59
+{
+    label = "SNode_59";
+    position = (143 3179);
+    states = ("false"  "true");
+}
+
+node AXIS33
+{
+    label = "AXIS_CHOICE_IS_AXIS";
+    position = (3823 3531);
+    states = ("false"  "true");
+}
+
+node SNode_60
+{
+    label = "SNode_60";
+    position = (143 3135);
+    states = ("false"  "true");
+}
+
+node WRITE31
+{
+    label = "WRITE_KINEMATICS_GOAL";
+    position = (3915 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_61
+{
+    label = "GOAL_61";
+    position = (51 3091);
+    states = ("false"  "true");
+}
+
+node WRITE30
+{
+    label = "WRITE_KINEMATICS_ALONG_AXIS";
+    position = (4007 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_62
+{
+    label = "GOAL_62";
+    position = (51 3047);
+    states = ("false"  "true");
+}
+
+node RESOLVE37
+{
+    label = "RESOLVE_INITIAL_VELOCITY_VECTOR";
+    position = (4099 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_63
+{
+    label = "GOAL_63";
+    position = (51 3003);
+    states = ("false"  "true");
+}
+
+node NEED36
+{
+    label = "NEED_VAR_FOR_COMPO";
+    position = (4191 3531);
+    states = ("false"  "true");
+}
+
+node SNode_64
+{
+    label = "SNode_64";
+    position = (51 2959);
+    states = ("false"  "true");
+}
+
+node SNode_41
+{
+    label = "SNode_41";
+    position = (695 3487);
+    states = ("false"  "true");
+}
+
+node SNode_42
+{
+    label = "SNode_42";
+    position = (327 3399);
+    states = ("false"  "true");
+}
+
+node IDENTIFY39
+{
+    label = "IDENTIFY_DISPLACEMENT_GOAL";
+    position = (4283 3531);
+    states = ("false"  "true");
+}
+
+node SNode_43
+{
+    label = "SNode_43";
+    position = (235 3223);
+    states = ("false"  "true");
+}
+
+node RESOLVE38
+{
+    label = "RESOLVE_DISPLACEMENT_VECTOR";
+    position = (4375 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_66
+{
+    label = "GOAL_66";
+    position = (143 3003);
+    states = ("false"  "true");
+}
+
+node SNode_67
+{
+    label = "SNode_67";
+    position = (143 2959);
+    states = ("false"  "true");
+}
+
+node IDENTIFY41
+{
+    label = "IDENTIFY_SOUGHT_FINAL_VELOCITY";
+    position = (4467 3531);
+    states = ("false"  "true");
+}
+
+node SNode_54
+{
+    label = "SNode_54";
+    position = (327 3223);
+    states = ("false"  "true");
+}
+
+node RESOLVE40
+{
+    label = "RESOLVE_FINAL_VELOCITY_VECTOR";
+    position = (4559 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_69
+{
+    label = "GOAL_69";
+    position = (235 3003);
+    states = ("false"  "true");
+}
+
+node SNode_70
+{
+    label = "SNode_70";
+    position = (235 2959);
+    states = ("false"  "true");
+}
+
+node IDENTIFY43
+{
+    label = "IDENTIFY_UNKNOWN_ACCEL";
+    position = (4651 3531);
+    states = ("false"  "true");
+}
+
+node SNode_55
+{
+    label = "SNode_55";
+    position = (419 3223);
+    states = ("false"  "true");
+}
+
+node RESOLVE42
+{
+    label = "RESOLVE_ACCEL_VECTOR";
+    position = (4743 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_72
+{
+    label = "GOAL_72";
+    position = (327 3003);
+    states = ("false"  "true");
+}
+
+node SNode_73
+{
+    label = "SNode_73";
+    position = (327 2959);
+    states = ("false"  "true");
+}
+
+node KINE29
+{
+    label = "KINE_MISSING_T";
+    position = (4835 3531);
+    states = ("false"  "true");
+}
+
+node SNode_74
+{
+    label = "SNode_74";
+    position = (51 2915);
+    states = ("false"  "true");
+}
+
+node VECTOR44
+{
+    label = "VECTOR_AGAINST_AXIS";
+    position = (4927 3531);
+    states = ("false"  "true");
+}
+
+node SNode_75
+{
+    label = "SNode_75";
+    position = (143 2915);
+    states = ("false"  "true");
+}
+
+node EQUATION28
+{
+    label = "EQUATION_UNKNOWN_GOAL";
+    position = (5019 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_79
+{
+    label = "GOAL_79";
+    position = (51 2871);
+    states = ("false"  "true");
+}
+
+node RApp5
+{
+    label = "RApp5";
+    position = (51 2827);
+    states = ("false"  "true");
+}
+
+node GOAL_80
+{
+    label = "GOAL_80";
+    position = (143 2871);
+    states = ("false"  "true");
+}
+
+node RApp6
+{
+    label = "RApp6";
+    position = (143 2827);
+    states = ("false"  "true");
+}
+
+node GOAL_81
+{
+    label = "GOAL_81";
+    position = (51 2783);
+    states = ("false"  "true");
+}
+
+node TRY25
+{
+    label = "TRY_NEWTONS";
+    position = (5111 3531);
+    states = ("false"  "true");
+}
+
+node TRY24
+{
+    label = "TRY_NEWTONS_FOR_ACCEL";
+    position = (1431 3487);
+    states = ("false"  "true");
+}
+
+node GOAL_83
+{
+    label = "GOAL_83";
+    position = (51 2739);
+    states = ("false"  "true");
+}
+
+node CHOOSE47
+{
+    label = "CHOOSE_NEWTONS_BODY_GOAL";
+    position = (5203 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_84
+{
+    label = "GOAL_84";
+    position = (51 2695);
+    states = ("false"  "true");
+}
+
+node SYSTEM46
+{
+    label = "SYSTEM_IS_BODY_DURING_TIME";
+    position = (5295 3531);
+    states = ("false"  "true");
+}
+
+node SNode_86
+{
+    label = "SNode_86";
+    position = (51 2651);
+    states = ("false"  "true");
+}
+
+node NEWTONS45
+{
+    label = "NEWTONS_SYSTEM_IS_SYSTEM";
+    position = (5387 3531);
+    states = ("false"  "true");
+}
+
+node SNode_156
+{
+    label = "SNode_156";
+    position = (51 2607);
+    states = ("false"  "true");
+}
+
+node DEFINE23
+{
+    label = "DEFINE_SYSTEM_PROPERTIES";
+    position = (5479 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_98
+{
+    label = "GOAL_98";
+    position = (51 2563);
+    states = ("false"  "true");
+}
+
+node IDENTIFY22
+{
+    label = "IDENTIFY_NEWTONS_SYSTEM_MASS";
+    position = (5571 3531);
+    states = ("false"  "true");
+}
+
+node SNode_37
+{
+    label = "SNode_37";
+    position = (143 2519);
+    states = ("false"  "true");
+}
+
+node TRY26
+{
+    label = "TRY_NEWTONS_FOR_FORCE";
+    position = (1523 3487);
+    states = ("false"  "true");
+}
+
+node SNode_38
+{
+    label = "SNode_38";
+    position = (51 2475);
+    states = ("false"  "true");
+}
+
+node SNode_40
+{
+    label = "SNode_40";
+    position = (143 2431);
+    states = ("false"  "true");
+}
+
+node SNode_44
+{
+    label = "SNode_44";
+    position = (235 3179);
+    states = ("false"  "true");
+}
+
+node SNode_46
+{
+    label = "SNode_46";
+    position = (235 3135);
+    states = ("false"  "true");
+}
+
+node NULL48
+{
+    label = "NULL_VECTOR_NULL_COMPONENTS";
+    position = (5663 3531);
+    states = ("false"  "true");
+}
+
+node SNode_65
+{
+    label = "SNode_65";
+    position = (235 2915);
+    states = ("false"  "true");
+}
+
+node SNode_68
+{
+    label = "SNode_68";
+    position = (327 2915);
+    states = ("false"  "true");
+}
+
+node SNode_71
+{
+    label = "SNode_71";
+    position = (419 2915);
+    states = ("false"  "true");
+}
+
+node FIND49
+{
+    label = "FIND_FORCES_FOR_NEWTONS";
+    position = (5755 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_87
+{
+    label = "GOAL_87";
+    position = (143 2563);
+    states = ("false"  "true");
+}
+
+node NORMAL50
+{
+    label = "NORMAL_FORCE_EXISTS";
+    position = (5847 3531);
+    states = ("false"  "true");
+}
+
+node SNode_88
+{
+    label = "SNode_88";
+    position = (235 2519);
+    states = ("false"  "true");
+}
+
+node STRAT_90
+{
+    label = "STRAT_90";
+    position = (5939 3531);
+    states = ("SNode_92_1"  "SNode_91_2");
+}
+
+node NORMAL52
+{
+    label = "NORMAL_FORCE_DIRECTION";
+    position = (6031 3531);
+    states = ("false"  "true");
+}
+
+node INCLINE51
+{
+    label = "INCLINE_NORMAL_FORCE_DIRECTION";
+    position = (1615 3487);
+    states = ("false"  "true");
+}
+
+node SNode_91
+{
+    label = "SNode_91";
+    position = (143 2475);
+    states = ("false"  "true");
+}
+
+node HORIZ53
+{
+    label = "HORIZ_NORMAL_FORCE_DIRECTION";
+    position = (1707 3487);
+    states = ("false"  "true");
+}
+
+node BUGGY54
+{
+    label = "BUGGY_NORMAL_FORCE_DIRECTION*";
+    position = (1799 3487);
+    states = ("false"  "true");
+}
+
+node SNode_92
+{
+    label = "SNode_92";
+    position = (327 3443);
+    states = ("false"  "true");
+}
+
+node IDENTIFY55
+{
+    label = "IDENTIFY_FORCE_GOAL";
+    position = (6123 3531);
+    states = ("false"  "true");
+}
+
+node SNode_93
+{
+    label = "SNode_93";
+    position = (235 2475);
+    states = ("false"  "true");
+}
+
+node WEIGHT56
+{
+    label = "WEIGHT_FORCE_EXISTS";
+    position = (6215 3531);
+    states = ("false"  "true");
+}
+
+node SNode_94
+{
+    label = "SNode_94";
+    position = (327 2519);
+    states = ("false"  "true");
+}
+
+node WEIGHT57
+{
+    label = "WEIGHT_FORCE_DIRECTION";
+    position = (6307 3531);
+    states = ("false"  "true");
+}
+
+node SNode_95
+{
+    label = "SNode_95";
+    position = (327 2475);
+    states = ("false"  "true");
+}
+
+node SNode_97
+{
+    label = "SNode_97";
+    position = (419 2475);
+    states = ("false"  "true");
+}
+
+node FIND58
+{
+    label = "FIND_SYSTEM_ACCELERATING";
+    position = (6399 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_99
+{
+    label = "GOAL_99";
+    position = (51 2519);
+    states = ("false"  "true");
+}
+
+node IDENTIFY59
+{
+    label = "IDENTIFY_NEWTONS_SYSTEM_ACCEL";
+    position = (6491 3531);
+    states = ("false"  "true");
+}
+
+node SNode_100
+{
+    label = "SNode_100";
+    position = (419 2519);
+    states = ("false"  "true");
+}
+
+node FORCE60
+{
+    label = "FORCE_SET";
+    position = (6583 3531);
+    states = ("false"  "true");
+}
+
+node SNode_102
+{
+    label = "SNode_102";
+    position = (511 2475);
+    states = ("false"  "true");
+}
+
+node APPLY61
+{
+    label = "APPLY_NEWTONS";
+    position = (6675 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_103
+{
+    label = "GOAL_103";
+    position = (51 2431);
+    states = ("false"  "true");
+}
+
+node CHOOSE62
+{
+    label = "CHOOSE_AXIS";
+    position = (6767 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_104
+{
+    label = "GOAL_104";
+    position = (51 2387);
+    states = ("false"  "true");
+}
+
+node SNode_106
+{
+    label = "SNode_106";
+    position = (51 2343);
+    states = ("false"  "true");
+}
+
+node SNode_152
+{
+    label = "SNode_152";
+    position = (51 2299);
+    states = ("false"  "true");
+}
+
+node WRITE63
+{
+    label = "WRITE_NEWTONS_GOAL";
+    position = (6859 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_107
+{
+    label = "GOAL_107";
+    position = (51 2255);
+    states = ("false"  "true");
+}
+
+node WRITE64
+{
+    label = "WRITE_NEWTONS_BOTH_DIRECTIONS";
+    position = (6951 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_108
+{
+    label = "GOAL_108";
+    position = (51 2211);
+    states = ("false"  "true");
+}
+
+node GOAL_109
+{
+    label = "GOAL_109";
+    position = (143 2211);
+    states = ("false"  "true");
+}
+
+node GOAL65
+{
+    label = "GOAL_IS_RESOLVE_FORCE_VECTORS";
+    position = (143 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_110
+{
+    label = "GOAL_110";
+    position = (51 2167);
+    states = ("false"  "true");
+}
+
+node GOAL66
+{
+    label = "GOAL_IS_RESOLVE_NET_FORCE";
+    position = (235 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_111
+{
+    label = "GOAL_111";
+    position = (143 2167);
+    states = ("false"  "true");
+}
+
+node NEED67
+{
+    label = "NEED_VAR_FOR_NET_FORCE";
+    position = (7043 3531);
+    states = ("false"  "true");
+}
+
+node RApp7
+{
+    label = "RApp7";
+    position = (603 2167);
+    states = ("false"  "true");
+}
+
+node RApp8
+{
+    label = "RApp8";
+    position = (603 2123);
+    states = ("false"  "true");
+}
+
+node SNode_112
+{
+    label = "SNode_112";
+    position = (51 2079);
+    states = ("false"  "true");
+}
+
+node GOAL68
+{
+    label = "GOAL_IS_RESOLVE_VECTOR";
+    position = (327 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_113
+{
+    label = "GOAL_113";
+    position = (51 2123);
+    states = ("false"  "true");
+}
+
+node GOAL_114
+{
+    label = "GOAL_114";
+    position = (143 2123);
+    states = ("false"  "true");
+}
+
+node SNode_115
+{
+    label = "SNode_115";
+    position = (143 2079);
+    states = ("false"  "true");
+}
+
+node VECTOR69
+{
+    label = "VECTOR_OFF_AXIS";
+    position = (7135 3531);
+    states = ("false"  "true");
+}
+
+node SNode_116
+{
+    label = "SNode_116";
+    position = (51 2035);
+    states = ("false"  "true");
+}
+
+node SNode_117
+{
+    label = "SNode_117";
+    position = (235 2079);
+    states = ("false"  "true");
+}
+
+node VECTOR70
+{
+    label = "VECTOR_ALONG_AXIS";
+    position = (7227 3531);
+    states = ("false"  "true");
+}
+
+node SNode_118
+{
+    label = "SNode_118";
+    position = (327 2079);
+    states = ("false"  "true");
+}
+
+node EQUAL71
+{
+    label = "EQUAL_VARS_EQUATION";
+    position = (7319 3531);
+    states = ("false"  "true");
+}
+
+node SNode_119
+{
+    label = "SNode_119";
+    position = (143 2035);
+    states = ("false"  "true");
+}
+
+node SNode_120
+{
+    label = "SNode_120";
+    position = (235 2035);
+    states = ("false"  "true");
+}
+
+node GOAL72
+{
+    label = "GOAL_IS_RESOLVE_ACCEL_VECTOR";
+    position = (419 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_121
+{
+    label = "GOAL_121";
+    position = (235 2167);
+    states = ("false"  "true");
+}
+
+node SNode_122
+{
+    label = "SNode_122";
+    position = (419 2123);
+    states = ("false"  "true");
+}
+
+node VECTOR73
+{
+    label = "VECTOR_ORTHO_AXIS";
+    position = (7411 3531);
+    states = ("false"  "true");
+}
+
+node SNode_123
+{
+    label = "SNode_123";
+    position = (419 2079);
+    states = ("false"  "true");
+}
+
+node NEWTONS74
+{
+    label = "NEWTONS_SECOND_LAW";
+    position = (7503 3531);
+    states = ("false"  "true");
+}
+
+node SNode_124
+{
+    label = "SNode_124";
+    position = (327 2035);
+    states = ("false"  "true");
+}
+
+node SUM75
+{
+    label = "SUM_OF_FORCES";
+    position = (7595 3531);
+    states = ("false"  "true");
+}
+
+node SNode_125
+{
+    label = "SNode_125";
+    position = (419 2035);
+    states = ("false"  "true");
+}
+
+node GOAL_126
+{
+    label = "GOAL_126";
+    position = (327 2167);
+    states = ("false"  "true");
+}
+
+node GOAL_127
+{
+    label = "GOAL_127";
+    position = (419 2167);
+    states = ("false"  "true");
+}
+
+node RApp9
+{
+    label = "RApp9";
+    position = (695 2167);
+    states = ("false"  "true");
+}
+
+node RApp10
+{
+    label = "RApp10";
+    position = (695 2123);
+    states = ("false"  "true");
+}
+
+node SNode_128
+{
+    label = "SNode_128";
+    position = (511 2079);
+    states = ("false"  "true");
+}
+
+node GOAL_129
+{
+    label = "GOAL_129";
+    position = (235 2123);
+    states = ("false"  "true");
+}
+
+node GOAL_130
+{
+    label = "GOAL_130";
+    position = (327 2123);
+    states = ("false"  "true");
+}
+
+node SNode_131
+{
+    label = "SNode_131";
+    position = (603 2079);
+    states = ("false"  "true");
+}
+
+node SNode_132
+{
+    label = "SNode_132";
+    position = (511 2035);
+    states = ("false"  "true");
+}
+
+node SNode_133
+{
+    label = "SNode_133";
+    position = (695 2079);
+    states = ("false"  "true");
+}
+
+node SNode_134
+{
+    label = "SNode_134";
+    position = (603 2035);
+    states = ("false"  "true");
+}
+
+node SNode_135
+{
+    label = "SNode_135";
+    position = (695 2035);
+    states = ("false"  "true");
+}
+
+node SNode_154
+{
+    label = "SNode_154";
+    position = (511 2123);
+    states = ("false"  "true");
+}
+
+node SNode_136
+{
+    label = "SNode_136";
+    position = (787 2035);
+    states = ("false"  "true");
+}
+
+node SNode_137
+{
+    label = "SNode_137";
+    position = (879 2035);
+    states = ("false"  "true");
+}
+
+node GOAL_142
+{
+    label = "GOAL_142";
+    position = (51 1991);
+    states = ("false"  "true");
+}
+
+node GOAL_143
+{
+    label = "GOAL_143";
+    position = (143 1991);
+    states = ("false"  "true");
+}
+
+node GOAL_146
+{
+    label = "GOAL_146";
+    position = (235 1991);
+    states = ("false"  "true");
+}
+
+node RApp11
+{
+    label = "RApp11";
+    position = (51 1947);
+    states = ("false"  "true");
+}
+
+node RApp12
+{
+    label = "RApp12";
+    position = (143 1947);
+    states = ("false"  "true");
+}
+
+node RApp13
+{
+    label = "RApp13";
+    position = (235 1947);
+    states = ("false"  "true");
+}
+
+node GOAL_147
+{
+    label = "GOAL_147";
+    position = (51 1903);
+    states = ("false"  "true");
+}
+
+node TRY76
+{
+    label = "TRY_GRAV_FORCE_FOR_WEIGHT";
+    position = (7687 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_149
+{
+    label = "GOAL_149";
+    position = (51 1859);
+    states = ("false"  "true");
+}
+
+node APPLY77
+{
+    label = "APPLY_GRAV_FORCE_LAW";
+    position = (7779 3531);
+    states = ("false"  "true");
+}
+
+node GOAL_150
+{
+    label = "GOAL_150";
+    position = (51 1815);
+    states = ("false"  "true");
+}
+
+node GRAV78
+{
+    label = "GRAV_FORCE_LAW";
+    position = (7871 3531);
+    states = ("false"  "true");
+}
+
+node SNode_151
+{
+    label = "SNode_151";
+    position = (51 1771);
+    states = ("false"  "true");
+}
+
+node GOAL_153
+{
+    label = "GOAL_153";
+    position = (511 2167);
+    states = ("false"  "true");
+}
+
+node SNode_155
+{
+    label = "SNode_155";
+    position = (787 2079);
+    states = ("false"  "true");
+}
+
+potential (GOAL_2 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_3 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_4 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_5 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_6 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_7 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (DISPLACEM0 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (RApp1 | DISPLACEM0 SNode_3)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (GIVEN_1 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (RApp2 | GIVEN_1)
+{
+    data = ((1.00000000 0.00000000)
+        (0.00010000 0.99990000));
+}
+
+potential (SNode_8 | RApp1 RApp2)
+{
+    data = (((0.80000000 0.20000000)
+        (0.00000000 1.00000000))
+        ((0.00000000 1.00000000)
+        (0.00000000 1.00000000)));
+}
+
+potential (SNode_9 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_10 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_11 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_12 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_13 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_14 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_15 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_16 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_17 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (SNode_19 |)
+{
+    data = (0.02000000 0.98000000);
+}
+
+potential (NEED1 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_20 | SNode_16 NEED1)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (GRAV2 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_21 | SNode_20 GRAV2)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (VALUE3 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_24 | SNode_21 VALUE3)
+{
+    data = (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)));
+}
+
+potential (SLIDING4 |)
+{
+    data = (0.10000000 0.90000000);
+}
+
+potential (SNode_25 | SNode_15 SLIDING4)
+{
+    data = (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)));
+}
+
+potential (CONSTANT5 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_26 | SNode_11 CONSTANT5)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (KNOWN6 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (VELOCITY7 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_47 | SNode_3 VELOCITY7)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (RApp3 | KNOWN6 SNode_26 SNode_47)
+{
+    data = ((((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (1.00000000 0.00000000)))
+        (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000))));
+}
+
+potential (KNOWN8 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (RApp4 | KNOWN8 SNode_11)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (SNode_27 | RApp3 RApp4)
+{
+    data = (((0.80000000 0.20000000)
+        (0.00000000 1.00000000))
+        ((0.00000000 1.00000000)
+        (0.00000000 1.00000000)));
+}
+
+potential (COMPO16 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_48 | GOAL_2 COMPO16)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (TRY12 |)
+{
+    data = (0.70000000 0.30000000);
+}
+
+potential (TRY11 | TRY12)
+{
+    data = ((0.80000000 0.20000000)
+        (0.00000000 1.00000000));
+}
+
+potential (GOAL_49 | SNode_5 SNode_6 GOAL_48 TRY11)
+{
+    data = (((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000))))
+        ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)))));
+}
+
+potential (CHOOSE19 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_50 | GOAL_49 CHOOSE19)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SYSTEM18 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_51 | SNode_17 GOAL_50 SYSTEM18)
+{
+    data = ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))));
+}
+
+potential (KINEMATI17 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_52 | SNode_51 KINEMATI17)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (IDENTIFY10 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_53 | GOAL_49 SNode_52 IDENTIFY10)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (IDENTIFY9 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_28 | SNode_27 GOAL_53 IDENTIFY9)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (TRY13 | TRY12)
+{
+    data = ((0.80000000 0.20000000)
+        (0.00000000 1.00000000));
+}
+
+potential (TRY14 | TRY12)
+{
+    data = ((0.90000000 0.10000000)
+        (0.00000000 1.00000000));
+}
+
+potential (TRY15 | TRY12)
+{
+    data = ((0.90000000 0.10000000)
+        (0.00000000 1.00000000));
+}
+
+potential (VAR20 |)
+{
+    data = (0.30000000 0.70000000);
+}
+
+potential (SNode_29 | SNode_28 VAR20)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_31 | SNode_29 VALUE3)
+{
+    data = (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)));
+}
+
+potential (GIVEN21 |)
+{
+    data = (0.10000000 0.90000000);
+}
+
+potential (SNode_33 | SNode_10 GIVEN21)
+{
+    data = (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)));
+}
+
+potential (SNode_34 | SNode_10 CONSTANT5)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (VECTOR27 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (APPLY32 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_56 | GOAL_49 SNode_52 APPLY32)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (CHOOSE35 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_57 | GOAL_56 CHOOSE35)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (MAXIMIZE34 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_59 | SNode_7 GOAL_57 MAXIMIZE34)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (AXIS33 |)
+{
+    data = (0.20000000 0.80000000);
+}
+
+potential (SNode_60 | SNode_59 AXIS33)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (WRITE31 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_61 | GOAL_56 SNode_60 WRITE31)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (WRITE30 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_62 | GOAL_61 WRITE30)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (RESOLVE37 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_63 | SNode_28 GOAL_62 RESOLVE37)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (NEED36 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_64 | GOAL_63 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_41 | SNode_9 CONSTANT5)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_42 | SNode_8 SNode_41 KNOWN6)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (IDENTIFY39 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_43 | SNode_42 GOAL_53 IDENTIFY39)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (RESOLVE38 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_66 | SNode_43 GOAL_62 RESOLVE38)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (SNode_67 | GOAL_66 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (IDENTIFY41 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_54 | GOAL_53 IDENTIFY41)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (RESOLVE40 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_69 | SNode_54 GOAL_62 RESOLVE40)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (SNode_70 | GOAL_69 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (IDENTIFY43 |)
+{
+    data = (0.60000000 0.40000000);
+}
+
+potential (SNode_55 | SNode_34 GOAL_53 IDENTIFY43)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (RESOLVE42 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_72 | SNode_55 GOAL_62 RESOLVE42)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (SNode_73 | GOAL_72 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (KINE29 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_74 | GOAL_62 SNode_64 SNode_67 SNode_70 SNode_73 KINE29)
+{
+    data = (((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))))
+        ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)))))));
+}
+
+potential (VECTOR44 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_75 | SNode_4 GOAL_72 SNode_73 VECTOR44)
+{
+    data = (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)))));
+}
+
+potential (EQUATION28 |)
+{
+    data = (0.60000000 0.40000000);
+}
+
+potential (GOAL_79 | SNode_74 SNode_75 EQUATION28)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (RApp5 | VECTOR27 GOAL_79)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (GOAL_80 | SNode_75 EQUATION28)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (RApp6 | COMPO16 GOAL_80)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (GOAL_81 | RApp5 RApp6)
+{
+    data = (((0.80000000 0.20000000)
+        (0.00000000 1.00000000))
+        ((0.00000000 1.00000000)
+        (0.00000000 1.00000000)));
+}
+
+potential (TRY25 |)
+{
+    data = (0.10000000 0.90000000);
+}
+
+potential (TRY24 | TRY25)
+{
+    data = ((0.95000000 0.05000000)
+        (0.00000000 1.00000000));
+}
+
+potential (GOAL_83 | GOAL_81 TRY24)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (CHOOSE47 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_84 | GOAL_83 CHOOSE47)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SYSTEM46 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_86 | GOAL_84 SYSTEM46)
+{
+    data = (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)));
+}
+
+potential (NEWTONS45 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_156 | SNode_86 NEWTONS45)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (DEFINE23 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_98 | GOAL_83 SNode_156 DEFINE23)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (IDENTIFY22 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_37 | GOAL_98 IDENTIFY22)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (TRY26 | TRY25)
+{
+    data = ((0.90000000 0.10000000)
+        (0.00000000 1.00000000));
+}
+
+potential (SNode_38 | SNode_37 VAR20)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_40 | SNode_38 VALUE3)
+{
+    data = (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)));
+}
+
+potential (SNode_44 | SNode_43 VAR20)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_46 | SNode_44 VALUE3)
+{
+    data = (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)));
+}
+
+potential (NULL48 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_65 | SNode_29 GOAL_63 SNode_64 NULL48)
+{
+    data = (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)))));
+}
+
+potential (SNode_68 | GOAL_66 SNode_67 VECTOR44)
+{
+    data = ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))));
+}
+
+potential (SNode_71 | GOAL_69 SNode_70 VECTOR44)
+{
+    data = ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))));
+}
+
+potential (FIND49 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_87 | GOAL_83 SNode_156 FIND49)
+{
+    data = ((((0.70000000 0.30000000)
+        (0.70000000 0.30000000))
+        ((0.70000000 0.30000000)
+        (0.70000000 0.30000000)))
+        (((0.70000000 0.30000000)
+        (0.70000000 0.30000000))
+        ((0.70000000 0.30000000)
+        (0.00007000 0.99993000))));
+}
+
+potential (NORMAL50 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_88 | SNode_25 GOAL_87 NORMAL50)
+{
+    data = ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))));
+}
+
+potential (STRAT_90 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (NORMAL52 |)
+{
+    data = (0.64600000 0.35400000);
+}
+
+potential (INCLINE51 | NORMAL52)
+{
+    data = ((1.00000000 0.00000000)
+        (0.00000000 1.00000000));
+}
+
+potential (SNode_91 | SNode_88 SNode_12 SNode_13 STRAT_90 INCLINE51)
+{
+    data = ((((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000))))
+        ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))))
+        (((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000))))
+        ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))))));
+}
+
+potential (HORIZ53 | NORMAL52)
+{
+    data = ((0.80000000 0.20000000)
+        (0.00000000 1.00000000));
+}
+
+potential (BUGGY54 | NORMAL52)
+{
+    data = ((0.20000000 0.80000000)
+        (1.00000000 0.00000000));
+}
+
+potential (SNode_92 | SNode_12 STRAT_90 BUGGY54)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.00008000 0.99992000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000))));
+}
+
+potential (IDENTIFY55 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_93 | GOAL_87 SNode_88 IDENTIFY55)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (WEIGHT56 |)
+{
+    data = (0.30000000 0.70000000);
+}
+
+potential (SNode_94 | SNode_16 SNode_33 GOAL_87 WEIGHT56)
+{
+    data = (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)))));
+}
+
+potential (WEIGHT57 |)
+{
+    data = (0.30000000 0.70000000);
+}
+
+potential (SNode_95 | SNode_94 WEIGHT57)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_97 | GOAL_87 SNode_94 IDENTIFY55)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (FIND58 |)
+{
+    data = (0.70000000 0.30000000);
+}
+
+potential (GOAL_99 | GOAL_98 FIND58)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (IDENTIFY59 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_100 | GOAL_98 IDENTIFY59)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (FORCE60 |)
+{
+    data = (0.20000000 0.80000000);
+}
+
+potential (SNode_102 | GOAL_87 SNode_88 SNode_94 FORCE60)
+{
+    data = (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)))));
+}
+
+potential (APPLY61 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_103 | GOAL_83 SNode_102 APPLY61)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (CHOOSE62 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_104 | GOAL_103 CHOOSE62)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_106 | GOAL_104 MAXIMIZE34)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_152 | SNode_106 AXIS33)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (WRITE63 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_107 | GOAL_103 SNode_152 WRITE63)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (WRITE64 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_108 | GOAL_107 WRITE64)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (GOAL_109 | GOAL_107 WRITE64)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (GOAL65 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_110 | GOAL_109 GOAL65)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (GOAL66 |)
+{
+    data = (0.60000000 0.40000000);
+}
+
+potential (GOAL_111 | GOAL_109 GOAL66)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (NEED67 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (RApp7 | NEED67 GOAL_109)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (RApp8 | NEED36 GOAL_111)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (SNode_112 | RApp7 RApp8)
+{
+    data = (((0.80000000 0.20000000)
+        (0.00000000 1.00000000))
+        ((0.00000000 1.00000000)
+        (0.00000000 1.00000000)));
+}
+
+potential (GOAL68 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_113 | GOAL_110 GOAL68)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (GOAL_114 | GOAL_110 GOAL68)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_115 | GOAL_114 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (VECTOR69 |)
+{
+    data = (0.70000000 0.30000000);
+}
+
+potential (SNode_116 | SNode_95 SNode_97 GOAL_114 SNode_115 VECTOR69)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}
+
+potential (SNode_117 | GOAL_113 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (VECTOR70 |)
+{
+    data = (0.10000000 0.90000000);
+}
+
+potential (SNode_118 | SNode_91 GOAL_113 VECTOR70)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (EQUAL71 |)
+{
+    data = (0.40000000 0.60000000);
+}
+
+potential (SNode_119 | SNode_93 SNode_117 SNode_118 EQUAL71)
+{
+    data = (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)))));
+}
+
+potential (SNode_120 | SNode_92 SNode_93 GOAL_113 SNode_117 VECTOR69)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}
+
+potential (GOAL72 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_121 | GOAL_109 GOAL72)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_122 | GOAL_121 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (VECTOR73 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_123 | SNode_4 SNode_100 GOAL_121 SNode_122 VECTOR73)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}
+
+potential (NEWTONS74 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_124 | SNode_37 GOAL_109 SNode_112 SNode_122 NEWTONS74)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}
+
+potential (SUM75 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_125 | GOAL_109 SNode_112 SUM75)
+{
+    data = ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))));
+}
+
+potential (GOAL_126 | GOAL_108 GOAL65)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (GOAL_127 | GOAL_108 GOAL66)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (RApp9 | NEED67 GOAL_108)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (RApp10 | NEED36 GOAL_127)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (SNode_128 | RApp9 RApp10)
+{
+    data = (((0.80000000 0.20000000)
+        (0.00000000 1.00000000))
+        ((0.00000000 1.00000000)
+        (0.00000000 1.00000000)));
+}
+
+potential (GOAL_129 | GOAL_126 GOAL68)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (GOAL_130 | GOAL_126 GOAL68)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_131 | GOAL_130 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_132 | SNode_95 SNode_97 GOAL_130 SNode_131 VECTOR69)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}
+
+potential (SNode_133 | GOAL_129 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_134 | SNode_91 SNode_93 GOAL_129 SNode_133 VECTOR73)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}
+
+potential (SNode_135 | SNode_92 SNode_93 GOAL_129 SNode_133 VECTOR69)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}
+
+potential (SNode_154 | GOAL_121 NEED36)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_136 | SNode_37 GOAL_108 SNode_128 SNode_154 NEWTONS74)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}
+
+potential (SNode_137 | GOAL_108 SNode_128 SUM75)
+{
+    data = ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))));
+}
+
+potential (GOAL_142 | SNode_116 SNode_125 EQUATION28)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (GOAL_143 | SNode_116 SNode_132 EQUATION28)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (GOAL_146 | SNode_132 SNode_137 EQUATION28)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000))));
+}
+
+potential (RApp11 | VECTOR27 GOAL_142)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (RApp12 | COMPO16 GOAL_143)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (RApp13 | VECTOR27 GOAL_146)
+{
+    data = (((1.00000000 0.00000000)
+        (1.00000000 0.00000000))
+        ((1.00000000 0.00000000)
+        (0.00010000 0.99990000)));
+}
+
+potential (GOAL_147 | RApp11 RApp12 RApp13)
+{
+    data = ((((0.80000000 0.20000000)
+        (0.00000000 1.00000000))
+        ((0.00000000 1.00000000)
+        (0.00000000 1.00000000)))
+        (((0.00000000 1.00000000)
+        (0.00000000 1.00000000))
+        ((0.00000000 1.00000000)
+        (0.00000000 1.00000000))));
+}
+
+potential (TRY76 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_149 | GOAL_147 TRY76)
+{
+    data = (((0.70000000 0.30000000)
+        (0.70000000 0.30000000))
+        ((0.70000000 0.30000000)
+        (0.00007000 0.99993000)));
+}
+
+potential (APPLY77 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (GOAL_150 | SNode_20 SNode_37 GOAL_149 APPLY77)
+{
+    data = (((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000))))
+        ((((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.80000000 0.20000000)))
+        (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)))));
+}
+
+potential (GRAV78 |)
+{
+    data = (0.50000000 0.50000000);
+}
+
+potential (SNode_151 | GOAL_150 GRAV78)
+{
+    data = (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000)));
+}
+
+potential (GOAL_153 | GOAL_108 GOAL72)
+{
+    data = (((0.80000000 0.20000000)
+        (0.80000000 0.20000000))
+        ((0.80000000 0.20000000)
+        (0.00008000 0.99992000)));
+}
+
+potential (SNode_155 | SNode_4 SNode_100 GOAL_153 SNode_154 VECTOR44)
+{
+    data = ((((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))))
+        (((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000))))
+        ((((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.90000000 0.10000000)))
+        (((0.90000000 0.10000000)
+        (0.90000000 0.10000000))
+        ((0.90000000 0.10000000)
+        (0.00009000 0.99991000))))));
+}

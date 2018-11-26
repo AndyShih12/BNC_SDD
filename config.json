@@ -1,0 +1,68 @@
+[
+  {
+    "id": 0,
+    "name": "win95pts",
+    "filetype": "net",
+    "vars": 16,
+    "root": "PTROFFLINE",
+    "leaves": [],
+    "threshold": 0.5,
+    "input_filepath": "networks/binarynetworks/",
+    "output_filepath": "output/"
+  },
+  {
+    "id": 1,
+    "name": "andes",
+    "filetype": "net",
+    "vars": 24,
+    "root": "TRY12",
+    "leaves": [],
+    "threshold": 0.5,
+    "input_filepath": "networks/binarynetworks/",
+    "output_filepath": "output/"
+  },
+  {
+    "id": 2,
+    "name": "cpcs54",
+    "filetype": "uai",
+    "vars": 13,
+    "root": "x0",
+    "leaves": [],
+    "threshold": 0.48,
+    "input_filepath": "networks/",
+    "output_filepath": "output/"
+  },
+  {
+    "id": 3,
+    "name": "admission",
+    "filetype": "net",
+    "vars": 4,
+    "root": "Admit",
+    "leaves": [],
+    "threshold": 0.5,
+    "input_filepath": "networks/binarynetworks/",
+    "output_filepath": "output/"
+  },
+  {
+    "id": 4,
+    "name": "child",
+    "filetype": "net",
+    "vars": 7,
+    "root": "BirthAsphyxia",
+    "leaves": [],
+    "threshold": 0.9,
+    "input_filepath": "networks/",
+    "output_filepath": "output/"
+  },
+  {
+    "id": 5,
+    "name": "hailfinder",
+    "filetype": "net",
+    "vars": 13,
+    "root": "Date",
+    "leaves": [],
+    "threshold": 0.15,
+    "input_filepath": "networks/",
+    "output_filepath": "output/"
+  }
+]

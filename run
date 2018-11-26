@@ -1,0 +1,30 @@
+#! /bin/bash
+
+function jsonValue() {
+KEY=$1
+num=$2
+awk -F":" '{for(i=1;i<=NF;i++){if($i~/'$KEY'\042/){print $(i+1)}}}' | tr -d '",' | sed -n $((${num}+1))p | tr -d ' '
+}
+
+
+SRC_DIR=src
+OUT_DIR=exe
+LIB_DIR=samiam
+CP=${LIB_DIR}:${LIB_DIR}/inflib.jar:include/*
+JAVA=java
+
+CONFIG_ID=0
+CONFIG_FILE="config.json"
+
+output_filepath=$(cat ${CONFIG_FILE} | jsonValue output_filepath ${CONFIG_ID})
+id=$(cat ${CONFIG_FILE} | jsonValue id ${CONFIG_ID})
+name=$(cat ${CONFIG_FILE} | jsonValue name ${CONFIG_ID})
+filetype=$(cat ${CONFIG_FILE} | jsonValue filetype ${CONFIG_ID})
+root=$(cat ${CONFIG_FILE} | jsonValue root ${CONFIG_ID})
+vars=$(cat ${CONFIG_FILE} | jsonValue vars ${CONFIG_ID})
+
+odd_name=${output_filepath}${name}"_"${filetype}"_"${root}"_"${id}".odd"
+
+make
+${JAVA} -Xmx150g -cp ${CP}:${OUT_DIR} RunCompiler ${CONFIG_FILE} ${CONFIG_ID} ${odd_name}
+${JAVA} -Xmx150g -cp ${CP}:${OUT_DIR} TestOdd ${CONFIG_FILE} ${CONFIG_ID} ${odd_name}

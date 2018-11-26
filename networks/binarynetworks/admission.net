@@ -1,0 +1,91 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@1ff9e337";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@6804751";
+	node_size = (130.0 55.0);
+}
+
+node FirstTimeApplicant
+{
+	states = ("state0" "state1" );
+	position = (107 -178);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable2";
+	label = "FirstTimeApplicant";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node EntranceExam
+{
+	states = ("state0" "state1" );
+	position = (236 -180);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable3";
+	label = "EntranceExam";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Admit
+{
+	states = ("state0" "state1" );
+	position = (157 -48);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Admit";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node GPA
+{
+	states = ("state0" "state1" );
+	position = (368 -179);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "GPA";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node WorkExperience
+{
+	states = ("state0" "state1" );
+	position = (-25 -174);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "WorkExperience";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( FirstTimeApplicant | Admit )
+{
+	data = ((	0.8	0.2	)
+		(	0.3	0.7	));
+}
+potential ( EntranceExam | Admit )
+{
+	data = ((	0.85	0.15	)
+		(	0.6	0.4	));
+}
+potential ( Admit | )
+{
+	data = (	0.7	0.3	);
+}
+potential ( GPA | Admit )
+{
+	data = ((	0.89	0.11	)
+		(	0.03	0.97	));
+}
+potential ( WorkExperience | Admit )
+{
+	data = ((	0.9	0.1	)
+		(	0.04	0.96	));
+}

@@ -1,0 +1,8 @@
+*.class
+*.odd
+
+.DS_Store
+
+samiam/htmlhelp/*
+samiam/network_samples/*
+samiam/library_javadocs/*
