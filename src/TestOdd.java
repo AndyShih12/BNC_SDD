@@ -109,12 +109,13 @@ public class TestOdd
       // threshold classification
       int threshold_class = 1;
       int network_verdict = (res.values()[threshold_class] >= bnc.getThreshold()) ? 1 : 0;
+      num_true += network_verdict;
 
       if (odd_verdict != network_verdict) {
         pass = false;
       }
 
-      if (true || odd_verdict != network_verdict) {
+      if (odd_verdict != network_verdict) {
         for (int j = 0; j < num_features; j++) {
           System.out.print(instance[j]);
         }
