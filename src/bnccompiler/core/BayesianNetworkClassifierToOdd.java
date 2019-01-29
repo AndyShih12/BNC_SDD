@@ -17,6 +17,7 @@ public class BayesianNetworkClassifierToOdd
   double class_prior;
   HashMap<DecisionKey, OddNode> cache;
 
+  boolean all_c_and_h_nodes_are_binary;
   double[][][] instance_points;
   ArrayList<TreeSet<Double>> instance_points_binary;
   int[] h_cardinality;
@@ -65,12 +66,18 @@ public class BayesianNetworkClassifierToOdd
     for (int i = 0; i < this.num_features; i++) {
       this.cardinality[i] = d.size( d.index( this.feature_order[i] ) );
     }
+
+    this.all_c_and_h_nodes_are_binary = true;
     for (int i = 0; i < this.block_order.length; i++) {
       this.h_cardinality[i] = 1;
       for (int j = 0; j < this.h_order[i].length; j++) {
         this.h_cardinality[i] *= d.size( d.index(this.h_order[i][j]) );
+        if (d.size( d.index(this.h_order[i][j]) ) > 2) {
+          this.all_c_and_h_nodes_are_binary = false;
+        }
       }
     }
+    //System.out.println("all_binary?: " + all_c_and_h_nodes_are_binary);
 
     this.threshold = this.bnc.getThreshold();
     this.cache = new HashMap<DecisionKey, OddNode>();
@@ -90,7 +97,6 @@ public class BayesianNetworkClassifierToOdd
 
   private OddNode buildOdd() {
     //setup ODD sinks on the last layer
-    //TODO put decision key as double array
     this.sink_nodes = new OddNode[this.root_cardinality];
     for (int i = 0; i < this.root_cardinality; i++) {
       this.sink_nodes[i] = new OddNode(this.num_features, new double[]{}, 0, OddNode.NodeType.SINK);
@@ -120,22 +126,21 @@ public class BayesianNetworkClassifierToOdd
         return buildSubOdd(level, order_level+1, new_prior, new_vector, instance);
       }
 
-      
+      if (level_sz == 0) {
+        return getSink(order_level+1, new_prior, new_vector);
+      }
       //find equivalent node
-      DecisionKey key = new DecisionKey();
+      DecisionKey key = getKey(order_level+1, new_prior, new_vector);
       //System.out.println("level: " + level + " order_level: " + order_level + " " + Arrays.toString(instance));
-      OddNode node = findInCache(order_level+1, new_prior, new_vector, key);
+      OddNode node = this.cache.get(key);
       if (node == null) {
         node = buildSubOdd(level, order_level+1, new_prior, new_vector, instance);
-        if (key.decision != null) {
-          this.cache.put(key, node);
-        }
+        this.cache.put(key, node);
       }
       //System.out.println(node.getSinkNum());
       return node;
     }
 
-    //TODO put decision key as double array
     OddNode node = new OddNode(level, new double[]{}, this.cardinality[level], OddNode.NodeType.NORMAL);
 
     for (int i = 0; i < this.cardinality[level]; i++) {
@@ -158,9 +163,27 @@ public class BayesianNetworkClassifierToOdd
     return node; 
   }
 
+  private OddNode getSink(int order_level, double[] prior, double[][] vector) {
+    BayesianNetwork network = create(order_level, prior, vector);
+    int root_node = network.domain().index( this.root_string );
+    il2.inf.JointEngine ie = getInferenceEngine(network);
+
+    Table table = doProbabilityQuery(ie, new IntMap(new int[]{}, new int[]{}), root_node);
+
+    // argmax classification
+    //int best = argmax(table.values());
+    //int best = argmax(prior);
+    //System.out.println(" " + Arrays.toString(prior));
+    //System.out.println(" " + Arrays.toString(table.values()) + " " + best);
+    //return this.sink_nodes[best];
+
+    // threshold classification
+    int threshold_class = 1;
+    return (table.values()[threshold_class] >= this.threshold) ? this.sink_nodes[1] : this.sink_nodes[0];
+  }
+
   //finds a node that has an equivalent vector.
-  private OddNode findInCache(int order_level, double[] prior, double[][] vector, DecisionKey key) {
-    int level_sz = this.num_features - this.block_order_sz[ order_level ];
+  private DecisionKey getKey(int order_level, double[] prior, double[][] vector) {
     int state_space = 1;
     for (int i = this.block_order_sz[ order_level ]; i < this.num_features; i++) {
       state_space *= this.cardinality[i];
@@ -171,39 +194,22 @@ public class BayesianNetworkClassifierToOdd
     int root_node = network.domain().index( this.root_string );
     il2.inf.JointEngine ie = getInferenceEngine(network);
 
-    if (level_sz == 0) {
-      Table table = doProbabilityQuery(ie, new IntMap(new int[]{}, new int[]{}), root_node);
-
-      // argmax classification
-      int best = argmax(table.values());
-      //int best = argmax(prior);
-      //TODO figure out why prior does not equal table.values()??
-      //System.out.println(" " + Arrays.toString(prior));
-      //System.out.println(" " + Arrays.toString(table.values()) + " " + best);
-      //return this.sink_nodes[best];
-
-      // threshold classification
-      int threshold_class = 1;
-      return (table.values()[threshold_class] >= this.threshold) ? this.sink_nodes[1] : this.sink_nodes[0];
-      
-    }
-
     IntMap evidence = null;
     int h_node = network.domain().index( this.h_order[order_level][0] );
-    Table tableH = doProbabilityQuery(ie, new IntMap(new int[]{},new int[]{}), h_node);
+    Table tableH = doProbabilityQuery(ie, new IntMap(new int[]{},new int[]{}), h_node); // Pr(H)
     evidence = new IntMap(new int[]{h_node}, new int[]{network.domain().instanceIndex( h_node, "0" )});
-    Table tableCH0 = doProbabilityQuery(ie, evidence, root_node);
+    Table tableCH0 = doProbabilityQuery(ie, evidence, root_node); // Pr(C | H = 0)
     evidence = new IntMap(new int[]{h_node}, new int[]{network.domain().instanceIndex( h_node, "1" )});
-    Table tableCH1 = doProbabilityQuery(ie, evidence, root_node);
-    boolean sign = tableCH1.values()[1] >= this.threshold;
-
+    Table tableCH1 = doProbabilityQuery(ie, evidence, root_node); // Pr(C | H = 1)
 
     if (this.instance_points[order_level] == null && this.instance_points_binary.get(order_level) == null) {
-      // instance_points stores Pr(v|h)/Pr(v)
+      // instance_points[v][h] stores Pr(v|h)/Pr(v)
 
       int[] instance = new int[this.num_features];
       this.instance_points[order_level] = new double[state_space][];
       this.instance_points_binary.set(order_level, new TreeSet<Double>());
+      this.instance_points_binary.get(order_level).add(Double.POSITIVE_INFINITY);
+      this.instance_points_binary.get(order_level).add(Double.NEGATIVE_INFINITY);
       for (int i = 0; i < state_space; i++) {
         int i_prime = i;
         for (int j = this.block_order_sz[order_level]; j < this.num_features; j++) {
@@ -214,11 +220,41 @@ public class BayesianNetworkClassifierToOdd
         evidence = setUpEvidence(network, this.block_order_sz[order_level], this.num_features, instance);
         Table table = doProbabilityQuery(ie, evidence, h_node);
 
-        this.instance_points[order_level][i] = table.values().clone();
-        for (int h = 0; h < this.h_cardinality[order_level]; h++) {
-          this.instance_points[order_level][i][h] *= (1.0/tableH.values()[h]);
+        if (this.all_c_and_h_nodes_are_binary) {
+          ie.setEvidence(evidence);
+          double prV = ie.prEvidence();
+
+          double prVH0 = (table.values()[0] * prV) / tableH.values()[0]; // Pr(v|H=0)
+          double prVH1 = (table.values()[1] * prV) / tableH.values()[1]; // Pr(v|H=1)
+
+          double gamma = prVH0 / prVH1;
+          this.instance_points_binary.get(order_level).add(gamma);
+        }
+        else {
+          this.instance_points[order_level][i] = table.values().clone();
+          for (int h = 0; h < this.h_cardinality[order_level]; h++) {
+            this.instance_points[order_level][i][h] *= (1.0/tableH.values()[h]);
+          }
         }
       }
+    }
+
+    if (this.all_c_and_h_nodes_are_binary) {
+      double prC1H0 = tableCH0.values()[1] * tableH.values()[0]; // Pr(C,H=0)
+      double prC1H1 = tableCH1.values()[1] * tableH.values()[1]; // Pr(C,H=1)
+      double gamma = -1 * (prC1H1 - this.threshold * tableH.values()[1]) / (prC1H0 - this.threshold * tableH.values()[0]);
+
+      Double eq_interval = null;
+      double flip = tableCH0.values()[1] < this.threshold ? 1.0 : -1.0;
+      if (tableCH0.values()[1] < this.threshold) {
+        eq_interval = this.instance_points_binary.get(order_level).floor(gamma);
+      } else {
+        eq_interval = this.instance_points_binary.get(order_level).ceiling(gamma);
+      }
+
+      // System.out.println(sign + " " + (prC1H1 - this.threshold * tableH.values()[1]) + " " + (prC1H0 - this.threshold * tableH.values()[0]));
+      // //System.out.println(gamma + " " + lower + " " + order_level);
+      return new DecisionKey(new double[]{ eq_interval, flip, order_level });
     }
 
     double[] result = new double[state_space];
@@ -250,14 +286,12 @@ public class BayesianNetworkClassifierToOdd
         }
         all_class_posterior += posterior;
       }
-      int best_class = (threshold_class_posterior / all_class_posterior) > this.threshold ? 1 : 0;
-           
+      int best_class = (threshold_class_posterior / all_class_posterior) >= this.threshold ? 1 : 0;
       // end threshold classification
       
       result[i] = (double)(best_class);
     }
-    key.updateDecision(result);
-    return this.cache.get(key);
+    return new DecisionKey(result);
   }
 
   private double[] getPrior(int order_level, double[] prior, double[][] vector, int[] instance) {
@@ -355,7 +389,7 @@ public class BayesianNetworkClassifierToOdd
     String indent = new String(new char[level]).replace('\0', ' ');
 
     System.out.println(indent + "instance: " + Arrays.toString( Arrays.copyOfRange(instance, 0, level) ));
-    System.out.println(indent + "fn_time: " + fn_time/1000000000 + " level: " + level);
+    //System.out.println(indent + "fn_time: " + fn_time/1000000000 + " level: " + level);
   }
 
   /*
@@ -451,7 +485,7 @@ public class BayesianNetworkClassifierToOdd
   }
 
   private BayesianNetwork createVersionNetwork(int version, double[] prior, double[][] vector) {
-    System.out.println("creating version: " + version);
+    //System.out.println("creating version: " + version);
 
     Table[] base_tables = this.bnc.getBayesianNetwork().cpts();
     Domain base_domain = this.bnc.getBayesianNetwork().domain();
@@ -560,7 +594,7 @@ public class BayesianNetworkClassifierToOdd
     // }
 
     BayesianNetwork bn = new BayesianNetwork( tables );
-    System.out.println("done version: " + version);
+    //System.out.println("done version: " + version);
     return bn;
   }
 

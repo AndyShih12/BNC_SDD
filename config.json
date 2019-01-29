@@ -56,12 +56,12 @@
   },
   {
     "id": 5,
-    "name": "hailfinder",
-    "filetype": "net",
-    "vars": 13,
-    "root": "Date",
+    "name": "nb",
+    "filetype": "uai",
+    "vars": 10,
+    "root": "x0",
     "leaves": [],
-    "threshold": 0.15,
+    "threshold": 0.55,
     "input_filepath": "networks/",
     "output_filepath": "output/"
   }
