@@ -13,7 +13,7 @@ LIB_DIR=samiam
 CP=${LIB_DIR}:${LIB_DIR}/inflib.jar:include/*
 JAVA=java
 
-CONFIG_ID=0
+CONFIG_ID=3
 CONFIG_FILE="config.json"
 
 output_filepath=$(cat ${CONFIG_FILE} | jsonValue output_filepath ${CONFIG_ID})
@@ -23,8 +23,12 @@ filetype=$(cat ${CONFIG_FILE} | jsonValue filetype ${CONFIG_ID})
 root=$(cat ${CONFIG_FILE} | jsonValue root ${CONFIG_ID})
 vars=$(cat ${CONFIG_FILE} | jsonValue vars ${CONFIG_ID})
 
-odd_name=${output_filepath}${name}"_"${filetype}"_"${root}"_"${id}".odd"
+name=${output_filepath}${name}"_"${filetype}"_"${root}"_"${id}
+odd_name=${name}".odd"
+sdd_name=${name}".sdd"
+vtree_name=${name}".vtree"
 
 make
 ${JAVA} -Xmx150g -cp ${CP}:${OUT_DIR} RunCompiler ${CONFIG_FILE} ${CONFIG_ID} ${odd_name}
 ${JAVA} -Xmx150g -cp ${CP}:${OUT_DIR} TestOdd ${CONFIG_FILE} ${CONFIG_ID} ${odd_name}
+./exe/oddtosdd <<< "${odd_name} ${vars} ${sdd_name} ${vtree_name}" 
