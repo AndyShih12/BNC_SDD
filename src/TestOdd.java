@@ -27,21 +27,12 @@ public class TestOdd
     return new String(encoded, encoding);
   }
 
-  private static CompileClassifierConfig loadConfig(String config_file, String config_id) {
+  private static CompileClassifierConfig loadConfig(String config_file) {
     CompileClassifierConfig config = null;
     try {
       ObjectMapper mapper = new ObjectMapper();
       String jsonString = readFile(config_file, Charset.forName("UTF-8"));
-      CompileClassifierConfig[] configArr = mapper.readValue(jsonString, CompileClassifierConfig[].class);
-      for (CompileClassifierConfig c : configArr) {
-        if (c.getId().equals(config_id)) {
-          config = c;
-          break;
-        }
-      }
-      if (config == null) {
-        throw new Exception(String.format("config_id is not found: %s", config_id));
-      }
+      config = mapper.readValue(jsonString, CompileClassifierConfig.class);
     } catch (IOException e) {
       System.out.println(e);
     } catch (Exception e) {
@@ -262,8 +253,9 @@ public class TestOdd
     return root;
   }
 
-  void run(String config_file, String config_id, String odd_file) {
-    CompileClassifierConfig config = loadConfig(config_file, config_id);
+  void run(String config_file) {
+    CompileClassifierConfig config = loadConfig(config_file);
+    String odd_file = config.getOutput_filepath() + config.getName() + "_" + config.getId() + ".odd";
 
     BayesianNetworkClassifier bnc = loadBNC(config);
     OddNode odd = loadODD(odd_file);
@@ -272,16 +264,14 @@ public class TestOdd
   }
 
   public static void main(String[] args) {
-    if (args.length != 3) {
-      System.out.println("Must have 3 arguments: config_file, config_id, odd_file");
+    if (args.length != 1) {
+      System.out.println("Must have 1 argument: config_file");
       return;
     }
     TestOdd T = new TestOdd();
 
     String config_file = args[0];
-    String config_id = args[1];
-    String odd_file = args[2];
 
-    T.run(config_file,config_id,odd_file);
+    T.run(config_file);
   }
 }

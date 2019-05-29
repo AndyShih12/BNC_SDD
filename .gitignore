@@ -1,5 +1,6 @@
 exe/*
 *.odd
+output/*
 
 .DS_Store
 

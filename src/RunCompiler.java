@@ -19,21 +19,12 @@ public class RunCompiler
     return new String(encoded, encoding);
   }
 
-  private static CompileClassifierConfig loadConfig(String config_file, String config_id) {
+  private static CompileClassifierConfig loadConfig(String config_file) {
     CompileClassifierConfig config = null;
     try {
       ObjectMapper mapper = new ObjectMapper();
       String jsonString = readFile(config_file, Charset.forName("UTF-8"));
-      CompileClassifierConfig[] configArr = mapper.readValue(jsonString, CompileClassifierConfig[].class);
-      for (CompileClassifierConfig c : configArr) {
-        if (c.getId().equals(config_id)) {
-          config = c;
-          break;
-        }
-      }
-      if (config == null) {
-        throw new Exception(String.format("config_id is not found: %s", config_id));
-      }
+      config = mapper.readValue(jsonString, CompileClassifierConfig.class);
     } catch (IOException e) {
       System.out.println(e);
     } catch (Exception e) {
@@ -43,18 +34,16 @@ public class RunCompiler
   }
 
   public static void main(String[] args) {
-    if (args.length != 3) {
-      System.out.println("Must have 3 arguments: config_file, config_id, output_filename");
+    if (args.length != 1) {
+      System.out.println("Must have 1 argument: config_file");
       return;
     }
     RunCompiler T = new RunCompiler();
    
     String config_file = args[0];
-    String config_id = args[1];
-    String output_filename = args[2];
 
-    CompileClassifierConfig config = loadConfig(config_file, config_id);
-    CompileClassifier compile_job = new CompileClassifier(config, output_filename);
+    CompileClassifierConfig config = loadConfig(config_file);
+    CompileClassifier compile_job = new CompileClassifier(config);
     compile_job.run(true);
   }
 }

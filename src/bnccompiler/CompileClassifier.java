@@ -20,6 +20,7 @@ public class CompileClassifier
   BayesianNetworkClassifier bnc;
   BayesianNetworkClassifierCompilationOrder bnc_compilation_order;
   String output_filename;
+  String documentation_filename;
 
   int num_vars;
   long model_count;
@@ -28,16 +29,18 @@ public class CompileClassifier
 
   static int ODD_SIZE = 0;
 
-  private static String getDefaultOutputFilename(CompileClassifierConfig config) {
-    return config.getOutput_filepath() + config.getName() + ".odd";
+  private static String getOutputFilename(CompileClassifierConfig config) {
+    return config.getOutput_filepath() + config.getName() + "_" + config.getId() + ".odd";
+  }
+
+  private static String getDocumentationFilename(CompileClassifierConfig config) {
+    return config.getOutput_filepath() + config.getName() + "_" + config.getId() + ".txt";
   }
 
   public CompileClassifier(CompileClassifierConfig config) {
-    this(config, getDefaultOutputFilename(config));
-  }
-  public CompileClassifier(CompileClassifierConfig config, String custom_output_filename) {
     this.config = config;
-    this.output_filename = custom_output_filename;
+    this.output_filename = getOutputFilename(config);
+    this.documentation_filename = getDocumentationFilename(config);
 
     BayesianNetwork bn = null;
     String input_filename = this.config.getInput_filepath() + this.config.getName() + "." + this.config.getFiletype();
@@ -59,6 +62,9 @@ public class CompileClassifier
       System.out.println(e);
     }
 
+    File output_filepath = new File(this.config.getOutput_filepath());
+    output_filepath.mkdirs();
+
     this.bnc = new BayesianNetworkClassifier(
       bn,
       config.getRoot(),
@@ -74,25 +80,12 @@ public class CompileClassifier
     long stop = System.nanoTime();
 
     if (logging) {
-      int largest_feature_group = 0;
-      int compile_width = 0;
-      for (int j = 0; j < this.bnc_compilation_order.getBlock_order().length; j++) {
-        largest_feature_group = Math.max(largest_feature_group, this.bnc_compilation_order.getBlock_order()[j].length);
-        
-        int width_before = 0;
-        int width_after = 0;
-        for (int k = 0; k < this.bnc_compilation_order.getBlock_order().length; k++) {
-          if (k < j) { width_before += this.bnc_compilation_order.getBlock_order()[k].length; }
-          else { width_after += this.bnc_compilation_order.getBlock_order()[k].length; }
-        }
-        compile_width = Math.max(compile_width, this.bnc_compilation_order.getBlock_order()[j].length + Math.min(width_before, width_after));
-      }
       System.out.println(
         config.getName() + // network name
         " & " + this.bnc_compilation_order.getH_order()[0][0] + // class name
         " & " + this.bnc_compilation_order.getFeature_order().length + // number of features
-        " & " + compile_width + // block order width
-        " & " + largest_feature_group + // largest feature block
+        " & " + this.getCompileWidth() + // block order width
+        " & " + this.getLargestFeatureGroup() + // largest feature block
         " & " + (this.bnc_compilation_order.getH_order().length - 1) + // number of blocks
         " & " + ODD_SIZE + // ODD size
         " & " + (stop-start)/1000000000L + "\\\\" // compile time
@@ -100,15 +93,39 @@ public class CompileClassifier
     }
   }
 
+  private int getLargestFeatureGroup() {
+    int largest_feature_group = 0;
+    for (int j = 0; j < this.bnc_compilation_order.getBlock_order().length; j++) {
+        largest_feature_group = Math.max(largest_feature_group, this.bnc_compilation_order.getBlock_order()[j].length);
+    }
+    return largest_feature_group;
+  }
+
+  private int getCompileWidth() {
+    int compile_width = 0;
+    for (int j = 0; j < this.bnc_compilation_order.getBlock_order().length; j++) {
+      int width_before = 0;
+      int width_after = 0;
+      for (int k = 0; k < this.bnc_compilation_order.getBlock_order().length; k++) {
+        if (k < j) { width_before += this.bnc_compilation_order.getBlock_order()[k].length; }
+        else { width_after += this.bnc_compilation_order.getBlock_order()[k].length; }
+      }
+      compile_width = Math.max(compile_width, this.bnc_compilation_order.getBlock_order()[j].length + Math.min(width_before, width_after));
+    }
+    return compile_width;
+  }
+
   private void compileAndWriteOdd(BayesianNetworkClassifier bnc, BayesianNetworkClassifierCompilationOrder compilation_order, String output_filename) {
     BayesianNetworkClassifierToOdd compiler = new BayesianNetworkClassifierToOdd(bnc, compilation_order);
     OddNode result = compiler.compile();
-    writeOddToFile(result, compilation_order, output_filename);
+    writeOddToFile(result, compilation_order);
   }
 
-  public void writeOddToFile(OddNode root, BayesianNetworkClassifierCompilationOrder compilation_order, String filename) {
+  public void writeOddToFile(OddNode root, BayesianNetworkClassifierCompilationOrder compilation_order) {
+
+    // write ODD to file
     ODD_SIZE = 0;
-    File file = new File(filename);
+    File file = new File(this.output_filename);
     try {
       PrintWriter writer = new PrintWriter(file);
 
@@ -121,6 +138,24 @@ public class CompileClassifier
     catch (FileNotFoundException e) {
       e.printStackTrace();
     }
+
+    // write feature order to file
+    file = new File(this.documentation_filename);
+    try {
+      PrintWriter writer = new PrintWriter(file);
+
+      writer.println("num_variables: " + Integer.toString(compilation_order.getFeature_order().length) + "\n");
+      for (String f : compilation_order.getFeature_order()) {
+        writer.println("name: " + f);
+        writer.println("comment: none\n");
+      }
+      writer.println("constraint_sdd: none");
+
+      writer.close();
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    }
+
   }
   private void writeOddToFileHelper(OddNode root, PrintWriter writer) {
     if (this.node_name.containsKey(root)) {
