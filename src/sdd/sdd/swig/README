@@ -1,0 +1,23 @@
+Hi Arthur,
+
+Thanks a lot, I managed to get the python version working. It's actually 
+pretty easy so I'll give you the steps to do it (in ubuntu).
+
+1) installed swig and made the interface file (in attachment)
+2) swig -python sdd.i
+3) gcc -fpic -c sdd_wrap.c -I/usr/include/python3.2mu/
+     (change with your own path to python.h)
+4) ld -shared sdd_wrap.o -Llib -lsdd -lm -lpython3.2mu -XLinker -rpath lib -o _sdd.so
+     (in my case lib is the directory containing libsdd.so and python3.2mu is the version I'm compiling for)
+
+After this, just open python, import sdd and you can use the entire 
+library.
+
+Cheers,
+Joris
+
+(CC: Anton Dries)
+Jonas Vlasselaer
+
+ld -shared sdd_wrap.o -Llib -lsdd -lm -lpython2.7 -XLinker -rpath lib -o _sdd.so
+

@@ -1,11 +1,11 @@
-  {
-    "id": "1",
-    "name": "admission",
-    "filetype": "net",
-    "vars": 4,
-    "root": "Admit",
-    "leaves": [],
-    "threshold": 0.5,
-    "input_filepath": "networks/binarynetworks/",
-    "output_filepath": "output/"
-  }
+{
+  "id": "1",
+  "name": "admission",
+  "filetype": "net",
+  "vars": 4,
+  "root": "Admit",
+  "leaves": [],
+  "threshold": 0.5,
+  "input_filepath": "networks/binarynetworks/",
+  "output_filepath": "output/"
+}

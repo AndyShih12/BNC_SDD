@@ -1,0 +1,3 @@
+swig -python -o ​sdd_wrap.c ​sdd.i
+gcc -c -fPIC sdd_wrap.c -o sdd_wrap.o -I/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+ld -dylib sdd_wrap.o -Llib -lsdd -lm -lpython -L/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7  -rpath lib -o _sdd.so

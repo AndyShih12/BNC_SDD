@@ -24,4 +24,7 @@ make
 
 ${JAVA} -Xmx150g -cp ${CP}:${OUT_DIR} RunCompiler ${CONFIG_FILE}
 ${JAVA} -Xmx150g -cp ${CP}:${OUT_DIR} TestOdd ${CONFIG_FILE}
-#./exe/oddtosdd <<< "${odd_name} ${vars} ${sdd_name} ${vtree_name}" 
+
+cd src/sdd/
+python convert_to_sdd.py ../../${CONFIG_FILE}
+cd ../../
