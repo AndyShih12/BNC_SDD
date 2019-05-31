@@ -215,6 +215,7 @@ public class TestOdd
       Scanner sc = new Scanner(new File(odd_file));
       
       String variable_order = sc.nextLine();
+      int offset = 2;
 
       HashMap<String, OddNode> node = new HashMap<String, OddNode>();
       HashMap<String, ArrayList<String> > map = new HashMap<String, ArrayList<String> >();
@@ -226,10 +227,10 @@ public class TestOdd
         while (scl.hasNext()) {
           tokens.add(scl.next());
         }
-        node.put(tokens.get(0), new OddNode(Integer.parseInt(tokens.get(tokens.size() - 1)), new double[]{}, tokens.size() - 2, OddNode.NodeType.NORMAL));
+        node.put(tokens.get(0), new OddNode(Integer.parseInt(tokens.get(1)), new double[]{}, tokens.size() - 2, OddNode.NodeType.NORMAL));
         map.put(tokens.get(0), tokens);
 
-        for (int i = 1; i < tokens.size() - 1; i++) {
+        for (int i = offset; i < tokens.size(); i++) {
           if (tokens.get(i).charAt(0) == 'S') {
             node.put(tokens.get(i), new OddNode(-1, new double[]{}, 0, OddNode.NodeType.SINK));
             node.get(tokens.get(i)).setSinkNum( Integer.parseInt(tokens.get(i).substring(1)) );
@@ -239,8 +240,8 @@ public class TestOdd
 
       for (Map.Entry<String, ArrayList<String> > entry : map.entrySet()) {
         ArrayList<String> tokens = entry.getValue();
-        for (int i = 1; i < tokens.size() - 1; i++) {
-          node.get(tokens.get(0)).setChild(i-1, node.get(tokens.get(i)));
+        for (int i = offset; i < tokens.size(); i++) {
+          node.get(tokens.get(0)).setChild(i-offset, node.get(tokens.get(i)));
         }
       }
 

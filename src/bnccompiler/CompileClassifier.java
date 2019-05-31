@@ -172,11 +172,11 @@ public class CompileClassifier
       for (int i = 0; i < root.getCardinality(); i++) {
         writeOddToFileHelper(root.getChild(i), writer);
       }
-      writer.print(cur);
+      writer.print(cur + " " + root.getLabel());
       for (int i = 0; i < root.getCardinality(); i++) {
         writer.print(" " + this.node_name.get(root.getChild(i)));
       }
-      writer.println(" " + root.getLabel());
+      writer.println("");
       ODD_SIZE += 1;
     }
   }
