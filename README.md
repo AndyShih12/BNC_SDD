@@ -30,6 +30,10 @@ The file that will be looked up is ```config["input_filepath"] + config["name"] 
 For example, if the filepath of the network file is at ```"networks/binarynetworks/admission.net"```, then
 we set ```config["input_filepath"]: "networks/binarynetworks/"```, ```config["name"]: "admission"```, and ```config["filetype"]: "net"```.
 
+#### Assumptions
+
+The underlying Bayesian Network should be completely binary (all interal nodes and leaves are binary). Furthermore, there should be no hard CPTs (no 0/1 values in CPTS). 
+
 ### Output Format
 
 The output of the program will be 4 files:
