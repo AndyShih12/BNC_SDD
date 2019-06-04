@@ -41,7 +41,7 @@ The output of the program will be 4 files:
 - ODD file: The ODD representation of the decision function of the BNC
 - SDD file: The SDD representation of the decision function of the BNC
 - vtree file: The vtree accompanying the SDD
-- variable description file: A description of the variables of the ODD/SDD (includes variable order, comments)
+- variable description file: A description of the variables of the ODD/SDD (includes variable order, metadata)
 
 The ODD file will be written at ```config["output_filepath"] + config["name"] + "_" + config["id"] + ".odd"```
 
