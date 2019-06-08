@@ -144,13 +144,11 @@ public class CompileClassifier
     try {
       PrintWriter writer = new PrintWriter(file);
 
-      writer.println("num_variables: " + Integer.toString(compilation_order.getFeature_order().length) + "\n");
+      writer.println("num_variables: " + Integer.toString(compilation_order.getFeature_order().length));
       for (String f : compilation_order.getFeature_order()) {
         writer.println("name: " + f);
-        writer.println("metadata: none\n");
+        writer.println("metadata: none");
       }
-      writer.println("constraint_sdd: none");
-
       writer.close();
     } catch (FileNotFoundException e) {
       e.printStackTrace();
