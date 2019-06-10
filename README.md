@@ -1,6 +1,6 @@
 # BNC_SDD
 
-Converts a Bayesian Network Classifier (BNC) into a Sentential Decision Diagram (SDD) by first compiling an Ordered Decision Diagram and then converting the ODD into a SDD.
+Converts a Bayesian Network Classifier (BNC) into a Sentential Decision Diagram (SDD) by first compiling an Ordered Decision Diagram (ODD) and then converting the ODD into a SDD.
 The algorithm is described in the following paper:
 
 ```
