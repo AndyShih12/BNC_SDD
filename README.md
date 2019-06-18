@@ -1,7 +1,6 @@
-# BNC_ODD
+# BNC_SDD
 
-Converts a Bayesian Network Classifier (BNC) into a Ordered Decision Diagram (ODD). 
-Then, post-processes the ODD into a Sentential Decision Diagram (SDD).
+Converts a Bayesian Network Classifier (BNC) into a Sentential Decision Diagram (SDD) by first compiling an Ordered Decision Diagram (ODD) and then converting the ODD into a SDD.
 The algorithm is described in the following paper:
 
 ```
@@ -51,7 +50,7 @@ The vtree file will be written at ```config["output_filepath"] + config["name"] 
 
 The variable description file will be written at ```config["output_filepath"] + config["name"] + "_" + config["id"] + ".txt"```
 
-### Running BNC_ODD
+### Running BNC_SDD
 
 ```
 ./run
