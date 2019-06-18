@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "0",
     "name": "win95pts",
     "filetype": "net",
     "vars": 16,
@@ -11,7 +11,7 @@
     "output_filepath": "output/"
   },
   {
-    "id": 1,
+    "id": "1",
     "name": "andes",
     "filetype": "net",
     "vars": 24,
@@ -22,7 +22,7 @@
     "output_filepath": "output/"
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "cpcs54",
     "filetype": "uai",
     "vars": 13,
@@ -33,7 +33,7 @@
     "output_filepath": "output/"
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "admission",
     "filetype": "net",
     "vars": 4,
@@ -44,7 +44,7 @@
     "output_filepath": "output/"
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "child",
     "filetype": "net",
     "vars": 7,
@@ -55,7 +55,7 @@
     "output_filepath": "output/"
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "nb",
     "filetype": "uai",
     "vars": 10,
